@@ -1,0 +1,80 @@
+<!-- Slider section -->
+<section class="slider_section position-relative">
+  <div class="container">
+    <div class="row">
+      <!-- Form section -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- Age Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="ageInput">Age:</label>
+              <input type="number" class="form-control" id="ageInput" placeholder="Enter age">
+            </div>
+          </div>
+          <!-- Sex Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="sexInput">Sex:</label>
+              <select class="form-control" id="sexInput">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <!-- BMI Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="bmiInput">BMI:</label>
+              <input type="number" step="0.01" class="form-control" id="bmiInput" placeholder="Enter BMI">
+            </div>
+          </div>
+          <!-- Number of Children Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="childrenInput">Number of Children:</label>
+              <input type="number" class="form-control" id="childrenInput" placeholder="Enter number of children">
+            </div>
+          </div>
+          <!-- Smoker Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="smokerInput">Smoker:</label>
+              <select class="form-control" id="smokerInput">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </div>
+          <!-- Region Input -->
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="regionInput">Region:</label>
+              <select class="form-control" id="regionInput">
+                <option value="southwest">Southwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="northwest">Northwest</option>
+                <option value="northeast">Northeast</option>
+              </select>
+            </div>
+          </div>
+          <!-- Submit Button -->
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary btn-long" onclick="predictInsurance()">Predict</button>
+          </div>
+        </div>
+      </div>
+      <!-- Prediction Results section -->
+      <div class="col-md-6">
+        <div class="prediction-section">
+          <h2>Prediction Results</h2>
+          <textarea class="form-control" id="predictionResult" rows="10" readonly></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Slider section -->
+</div>
+
+<!-- Info section -->
